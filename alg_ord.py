@@ -1,12 +1,6 @@
 # Algoritmos de ordenação -> TimSort // MergeSort // InsertionSort
 
 comp_merge = 0
-comp_tim = 0
-
-
-def tim_sort(lista):
-    global comp_tim
-    return comp_tim
 
 
 def merge_sort(lista):
