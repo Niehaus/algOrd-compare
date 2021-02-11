@@ -1,15 +1,17 @@
 # Algoritmos de ordenação -> TimSort // MergeSort // InsertionSort
 
-def tim_sort():
-    ...
+comp_merge = 0
+comp_tim = 0
 
 
-comp = 0
+def tim_sort(lista):
+    global comp_tim
+    return comp_tim
 
 
 def merge_sort(lista):
     if len(lista) > 1:
-        global comp
+        global comp_merge
         metade = int(len(lista) / 2)
         direita = lista[:metade]
         esquerda = lista[metade:]
@@ -28,7 +30,7 @@ def merge_sort(lista):
             else:
                 lista[k_global] = direita[k_dir]
                 k_dir += 1
-            comp += 1
+            comp_merge += 1
             k_global += 1
 
         while k_esq < len(esquerda):
@@ -40,7 +42,7 @@ def merge_sort(lista):
             lista[k_global] = direita[k_dir]
             k_dir += 1
             k_global += 1
-        return comp
+        return comp_merge
 
 
 def insertion_sort(lista):
