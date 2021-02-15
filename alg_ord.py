@@ -1,4 +1,4 @@
-# Algoritmos de ordenação -> TimSort // MergeSort // InsertionSort
+# Algoritmos de ordenação -> MergeSort // InsertionSort
 
 comp_merge = 0
 
