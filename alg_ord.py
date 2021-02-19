@@ -36,7 +36,7 @@ def merge_sort(lista):
             lista[k_global] = direita[k_dir]
             k_dir += 1
             k_global += 1
-        return comp_merge
+        return comp_merge, lista
 
 
 def insertion_sort(lista):
@@ -53,4 +53,4 @@ def insertion_sort(lista):
                 compare += 1
                 break
         lista[k] = item_atual
-    return compare
+    return compare, lista
