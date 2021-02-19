@@ -49,6 +49,7 @@ if __name__ == '__main__':
     plt.plot(tam_entradas, comp_random, marker='o', label="Random")
     plt.plot(tam_entradas, comp_asc, marker='o', label="Asc")
     plt.plot(tam_entradas, comp_desc, alpha=0.5, marker='o', label="Desc")
+
     plt.xticks(tam_entradas, tam_entradas)
     # plt.tight_layout()
     plt.tick_params(axis='x', which='major', labelsize=8.5)

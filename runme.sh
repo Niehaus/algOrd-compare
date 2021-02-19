@@ -1,4 +1,4 @@
-for dir in entradas/teste; do
+for dir in entradas/random; do
   for subdir in ${dir}/*; do
     echo ${subdir}
     for file in ${subdir}/*; do
