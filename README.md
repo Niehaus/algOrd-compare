@@ -104,16 +104,16 @@ na tabela a seguir:
     
     
 <p align="center">
-  <img  width="25%"  src="/resultados/time_asc.png" alt="Asc"/>
+  <img src="/resultados/time_asc.png" alt="Asc"/>
 </p>
 
     
 <p align="center">
-  <img  width="25%"  src="resultados/time_desc.png" alt="Desc"/>
+  <img src="resultados/time_desc.png" alt="Desc"/>
 </p>
 
 <p align="center">
-  <img  width="25%"  src="resultados/time_random.png" alt="Random"/>
+  <img src="resultados/time_random.png" alt="Random"/>
 </p>
 
 
