@@ -41,7 +41,7 @@ def arrange_plot_vector(df_meth):
     return data
 
 
-def draw_graph(insert, merge, tim, title, ylabel):
+def draw_graph(insert, merge, tim, title, ylabel, fig):
     bx = ['32', '64', '1024', '10000', '100000', '1000000']
 
     x_locations = np.arange(len(bx))
@@ -62,11 +62,11 @@ def draw_graph(insert, merge, tim, title, ylabel):
     plt.title(title)
 
     plt.tight_layout()
-    plt.show()
+    plt.savefig(key)
 
 
 if __name__ == '__main__':
-    df = pd.read_csv('results_teste.csv')
+    df = pd.read_csv('results.csv')
 
     tam_entradas = sorted(df['n'].unique())
     tipo_entradas = df['entrada'].unique()
@@ -102,5 +102,5 @@ if __name__ == '__main__':
     for key in keys:
         draw_graph(
             insert_data[key], merge_data[key], tim_data[key],
-            titles[key], yLabels[key]
+            titles[key], yLabels[key], key
         )

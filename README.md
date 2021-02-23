@@ -102,12 +102,21 @@ na tabela a seguir:
 
 ## 6. Análises do Tempo
     
-    Gráfico dos tempos aqui.
+    
+<p align="center">
+  <img  width="25%"  src="/resultados/time_asc.png" alt="Asc"/>
+</p>
+
+    
+<p align="center">
+  <img  width="25%"  src="resultados/time_desc.png" alt="Desc"/>
+</p>
+
+<p align="center">
+  <img  width="25%"  src="resultados/time_random.png" alt="Random"/>
+</p>
+
 
 ## 7. Análises das Comparações
     
     Gráfico das comparações aqui.
-
-
-insert,random,1000000,247753762787,36926.90990996361
-insert,asc,1000000,999999,0.12520980834960938
