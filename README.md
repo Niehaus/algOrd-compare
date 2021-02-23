@@ -104,19 +104,31 @@ na tabela a seguir:
     
     
 <p align="center">
-  <img src="/resultados/time_asc.png" alt="Asc"/>
+  <img width="70%" src="/resultados/time_asc.png" alt="Asc"/>
 </p>
 
     
 <p align="center">
-  <img src="resultados/time_desc.png" alt="Desc"/>
+  <img width="70%" src="resultados/time_desc.png" alt="Desc"/>
 </p>
 
 <p align="center">
-  <img src="resultados/time_random.png" alt="Random"/>
+  <img width="70%" src="resultados/time_random.png" alt="Random"/>
 </p>
 
 
 ## 7. Análises das Comparações
     
-    Gráfico das comparações aqui.
+        
+<p align="center">
+  <img width="70%" src="/resultados/comp_asc.png" alt="Asc"/>
+</p>
+
+    
+<p align="center">
+  <img width="70%" src="resultados/comp_desc.png" alt="Desc"/>
+</p>
+
+<p align="center">
+  <img width="70%" src="resultados/comp_random.png" alt="Random"/>
+</p>
