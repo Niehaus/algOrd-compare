@@ -29,16 +29,16 @@ entrada como vetor ordenado acedente e descendente após ser invertido.
 
 ## 3. InsertionSort
 
-O `InsertionSort` consiste em ordenar os itens inserindo-os em sua posição
-corresponde da lista, nessa estratégia um valor "chave" é comparado com os
-outros itens até que se sua posição seja encontrada. Essa comparação é feita
-em direção à esquerda, comparando a "chave" com seu antecessor.
+O `InsertionSort` consiste em ordenar os itens inserindo-os na posição
+corresponde da lista, nessa estratégia um valor ‘chave’ é comparado com os
+outros itens até que a posição correta seja encontrada. Essa comparação é feita
+em direção à esquerda, comparando a ‘chave’ e o antecessor.
 
-Se o item comparado for menor, a lista deve ser deslocada para a direita,
-visando “abrir” um novo espaço para colocar a "chave" na posição
-correspondente; Finalmente ao encontrar um item maior ou não haver mais itens,
-significa que foi encontrada a posição que este item deve estar, ele deve ser
-colocado na posição correspondente.
+Se o ‘item’ comparado for menor, a lista deve ser deslocada para a direita,
+visando “abrir” um novo espaço para colocar a ‘chave’ na posição
+correspondente; finalmente ao encontrar um ‘item’ maior ou não haver mais itens,
+significa que foi encontrada a posição que este ‘item’ deve estar, ele ser
+posicionado corretamente na posição correspondente.
 
 ### 3.1 Complexidade 
 
@@ -48,7 +48,7 @@ o Insert é mais rápido e eficiente quando utilizado para ordenar listas pequen
 #### 3.1.1 Melhor Caso:
 
 O melhor caso é uma lista já ordenada, pois assim apenas é necessário percorrer
-a lista `n — 1` vezes, ou seja, todos seus elementos exceto o primeiro. Neste
+a lista `n — 1` vezes, ou seja, todos os seus elementos exceto o primeiro. Neste
 caso, a ordem de complexidade é `O(n)`.
 
 #### 3.1.2 Caso Médio: 
@@ -59,38 +59,41 @@ de complexidade é `O(n²)`.
 
 O pior caso ocorre quando os elementos da lista estão em ordem decrescente,
 pois o laço interno realizará a quantidade máxima de iterações, de forma que a
-"chave" sempre será menor que seu antecessor. Neste caso, a ordem de
-complexidade é `O(n²)`
+‘chave’ sempre será menor o antecessor. Neste caso, a ordem de
+complexidade é `O(n²)`.
 
 ## 4. MergeSort
 
- `MergeSort` é um algoritmo que utiliza do ideal "dividir e conquistar", assim,
+`MergeSort` é um algoritmo que utiliza do ideal “dividir e conquistar”, assim,
 ele recursivamente dissolve o problema em subproblemas, até que eles se tornem
 simples o suficiente para serem resolvidos diretamente. As soluções dos
-subproblemas são então combinadas afim de gerar a solução do problema original.
+subproblemas são então combinadas de modo a gerar a solução do problema original.
 De forma geral, o algoritmo divide a lista em partes iguais, as ordena e as
-recobina de forma ordenada afim de gerar a solução de fato.
+recombina de forma ordenada para gerar a solução de fato.
  
 
 ### Complexidade 
 
-o Merge é mais rápido e eficiente quando utilizado para ordenar listas grandes 
+O Merge é mais rápido e eficiente quando utilizado para ordenar listas grandes 
 ou grandes quantidades de dados. Este algoritmo o `Melhor Caso`, `Caso Médio` e
-`Pior Caso` iguais, pois ao realizar as três etapas que contribuem para o 
-calculo de sua complexidade: dividir `O(1)`, conquistar `2T(n/2)` e combinar 
-`Θ(n)`, de maneira uniforme sua ordem de complexidade sempre será `O(nlog2n)`.
+`Pior Caso` iguais, pois ao realizar as três etapas que contribuem para o cálculo 
+da complexidade: dividir `O(1)`, conquistar `2T(n/2)` e combinar `Θ(n)`, assim a 
+ordem de complexidade para todos os casos é `O(nlog2n)`.
     
 
 ## 5. TimSort
-### Complexidade 
-#### Melhor Caso:
+### 5.1 Complexidade
+
+#### 5.1.1 Melhor Caso:
     equação melhor caso?
-#### Caso Médio: 
+
+#### 5.1.2 Caso Médio: 
     equação medio caso?
-#### Pior Caso:
+
+#### 5.1.3 Pior Caso:
     equação pior caso?
 
-Ao analisar a complexidade dos algoritmos citados acima, é possível reuní-las
+Ao analisar a complexidade dos algoritmos citados acima, é possível reuni-las
 na tabela a seguir: 
 
 | Algoritmo     | Melhor Caso   |  Médio Caso   | Pior Caso   |
@@ -101,13 +104,11 @@ na tabela a seguir:
 
 
 ## 6. Análises do Tempo
-    
-    
+     
 <p align="center">
   <img width="70%" src="/resultados/time_asc.png" alt="Asc"/>
 </p>
 
-    
 <p align="center">
   <img width="70%" src="resultados/time_desc.png" alt="Desc"/>
 </p>
@@ -118,13 +119,11 @@ na tabela a seguir:
 
 
 ## 7. Análises das Comparações
-    
-        
+
 <p align="center">
   <img width="70%" src="/resultados/comp_asc.png" alt="Asc"/>
 </p>
-
-    
+ 
 <p align="center">
   <img width="70%" src="resultados/comp_desc.png" alt="Desc"/>
 </p>
