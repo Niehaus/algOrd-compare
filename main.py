@@ -32,7 +32,7 @@ def sort_with(ordenador, lista):
         start = time.time()
         comp, lista_ordenada = tim_sort(lista)
         end = time.time()
-        print(f'Tim - Num. de Comparações: {comp}; Tempo: {end - start}')
+        # print(f'Tim - Num. de Comparações: {comp}; Tempo: {end - start}')
 
     return lista_ordenada, comp, end - start
 
@@ -46,7 +46,7 @@ if __name__ == '__main__':
     for number in range(0, len(numbers) - 1):
         random_list.append(int(numbers[number]))
 
-    results_file = 'resultados/results_newtim.csv'
+    results_file = 'resultados/results.csv'
     file_here = os.path.isfile(results_file)
     csv_file = open(results_file, 'a', newline='', encoding='utf8')
     csv_writer = csv.writer(csv_file)
@@ -67,20 +67,20 @@ if __name__ == '__main__':
         row = [algoritmo, 'random', len(random_list),
                comp_random, time_random]
         csv_writer.writerow(row)
-        #
-        # ord_asc, comp_asc, time_asc = sort_with(
-        #     algoritmo,
-        #     lista=copy.deepcopy(ord_random)
-        # )
-        # row = [algoritmo, 'asc', len(random_list),
-        #        comp_asc, time_asc]
-        # csv_writer.writerow(row)
-        #
-        # ord_desc, comp_desc, time_desc = sort_with(
-        #     algoritmo,
-        #     lista=copy.deepcopy(ord_asc[::-1])
-        # )
-        # row = [algoritmo, 'desc', len(random_list),
-        #        comp_desc, time_desc]
-        # csv_writer.writerow(row)
+
+        ord_asc, comp_asc, time_asc = sort_with(
+            algoritmo,
+            lista=copy.deepcopy(ord_random)
+        )
+        row = [algoritmo, 'asc', len(random_list),
+               comp_asc, time_asc]
+        csv_writer.writerow(row)
+
+        ord_desc, comp_desc, time_desc = sort_with(
+            algoritmo,
+            lista=copy.deepcopy(ord_asc[::-1])
+        )
+        row = [algoritmo, 'desc', len(random_list),
+               comp_desc, time_desc]
+        csv_writer.writerow(row)
 
